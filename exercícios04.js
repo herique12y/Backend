@@ -32,7 +32,7 @@ switch (dia) {
 }
 
 /// Atividade 02
-let mes = rl.question("Informe um valor entre 1 a 12: ");
+let mes = rl.questionInt("Informe um valor entre 1 a 12: ");
 
 switch (mes) {
     case 1:
@@ -71,6 +71,7 @@ switch (mes) {
     case 12:
         console.log("Dezembro");
         break;
+
 
     default:
         console.log("Valor Invalido");
