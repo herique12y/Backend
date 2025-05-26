@@ -1,5 +1,4 @@
 import rl from 'readline-sync'
-/*
 // Atividade 01
 let num = rl.questionInt("Informe um número: ");
 let cont = 1
@@ -64,7 +63,7 @@ for (let i = 1; i <= 20; i++) {
     a = b;
     b = proximo;
 }
-*/
+
 // Ativade 05
 for (let i = 0; i < 10; i++) {
     const nome = rl.question(`Digite o nome da pessoa ${i + 1}: `);
