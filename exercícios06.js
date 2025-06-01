@@ -28,11 +28,75 @@ function verificarParOuImpar(numero) {
     }
   }
   
-  // Exemplo de uso
-  const numero = 7;
+  const numero = 5;
   const resultado = verificarParOuImpar(numero);
-  console.log(resultado); // Saída: O número é ímpar
+  console.log(resultado);
   
-  const numero2 = 10;
+  const numero2 = 2;
   const resultado2 = verificarParOuImpar(numero2);
-  console.log(resultado2); // Saída: O número é par
+  console.log(resultado2);
+
+// Atividade 03
+function somar(a,b) {
+  return a + b;
+}
+
+let resposta = somar (5, 9);
+console.log(resposta);
+
+// Atividade 04
+function acresentarPorcetagem(valor, porcentagem) {
+  return valor + (valor * porcentagem / 100);
+}
+
+let resultadoFinal = acresentarPorcetagem(150, 50);
+console.log(resultadoFinal);
+
+// Atividade 05
+function calcularDesconto (valorOriginal, percentualDesconto) {
+  let desconto = valorOriginal * percentualDesconto / 100;
+  let valorFinal = valorOriginal - desconto;
+  return valorFinal;
+}
+
+let produto1 = calcularDesconto(100, 50);
+let produto2 = calcularDesconto(300, 10);
+let produto3 = calcularDesconto(200, 70);
+
+console.log("Produto 1: R$" + produto1);
+console.log("Produto 2: R$" + produto2);
+console.log("Produto 3: R$" + produto3);
+
+//nivel médio
+//  Atividade 06
+function calcularCirculo(raio) {
+  const area = Math.PI * Math.pow(raio, 2); // ou: raio ** 2
+  return area;
+}
+
+let raio = 10;
+let area = calcularCirculo(raio);
+console.log("A área do circulo é: " + area.toFixed(2));
+
+// Atividade 07
+function tempCelcius (temperatura) {
+  const fahrenheit = (celsius * 9/5) + 32;
+  return fahrenheit
+}
+
+const celsius = 15;
+let fahrenheit= tempCelcius(celsius);
+console.log("A temperatura em fahrenheit é: " + fahrenheit.toFixed(1));
+
+// Atividade 08
+function calcularIMC(peso, altura) {
+  const imc = peso / (altura * altura);
+  return imc;
+}
+
+let peso = 65;
+let altura = 1.75;
+let calc = calcularIMC(peso, altura);
+console.log("IMC: " + calc.toFixed(2));
+
+// Atividade 09
